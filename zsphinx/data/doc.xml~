@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<sphinx:docset>
+
+<sphinx:schema>
+<sphinx:field name="subject"/> 
+<sphinx:field name="content"/>
+<sphinx:attr name="published" type="timestamp"/>
+<sphinx:attr name="author_id" type="int" bits="16" default="1"/>
+</sphinx:schema>
+
+<sphinx:document id="1234">
+<content>один два три четыре</content>
+<published>1012325463</published>
+<author_id>100</author_id>
+<subject>тема</subject>
+<misc>какой-то неопределенный текст</misc>
+</sphinx:document>
+
+<sphinx:document id="1232">
+<content>содержание документа</content>
+<published>1012325463</published>
+<subject>еще какая-то тема</subject>
+<misc>что-то написано</misc>
+</sphinx:document>
+
+</sphinx:docset>
