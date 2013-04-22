@@ -414,8 +414,6 @@ int main ( int argc, char ** argv )
 					}
 				}
 				fprintf ( stdout, "\n" );
-/*ZVM*/
-				printf ("zvm\n");
 
 				#if USE_MYSQL
 				if ( sQueryInfo )
@@ -462,13 +460,9 @@ int main ( int argc, char ** argv )
 		pResult->m_hWordStats.IterateStart();
 		int iWord = 1;
 		
-/*ZVM*/
-		printf ("zvm 1\n");
 		while ( pResult->m_hWordStats.IterateNext() )
 		{
 			const CSphQueryResultMeta::WordStat_t & tStat = pResult->m_hWordStats.IterateGet();
-/*ZVM*/
-			printf ("zvm 2..\n");
 
 			fprintf ( stdout, "%d. '%s': "INT64_FMT" documents, "INT64_FMT" hits\n",
 				iWord,
@@ -477,26 +471,19 @@ int main ( int argc, char ** argv )
 				tStat.m_iHits );
 			iWord++;
 		}
-		printf ("zvm 3\n");
 		fprintf ( stdout, "\n" );
-		printf ("zvm 3.1\n");
 
 		///////////
 		// cleanup
 		///////////
 
 		SafeDelete ( pIndex );
-/*ZVM*/
-		printf ("zvm 3.2.0\n");
-		printf ("zvm 3.2\n");
 //		printf ("%p \n ", pIndex);
 //		if (pIndex) 
 //		{
 //			delete pIndex;
 //			pIndex = NULL;
 //		}
-/*ZVM*/
-		printf ("zvm 4\n");
 		
 	}
 
