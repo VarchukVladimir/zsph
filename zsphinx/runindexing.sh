@@ -26,9 +26,12 @@ sleep 1
 
 cat data/indexer/stdout.data
 
+./ns_stop.sh
+
+
 ${SETARCH} ${ZEROVM_ROOT}/zerovm -Msearch.manifest 
 
 cat data/search/stdout.data
 
-./ns_stop.sh
+
 
