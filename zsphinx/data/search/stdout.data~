@@ -1,0 +1,13 @@
+Sphinx 2.0.6-release (r3473)
+Copyright (c) 2001-2012, Andrew Aksyonoff
+Copyright (c) 2008-2012, Sphinx Technologies Inc (http://sphinxsearch.com)
+
+using config file '/data/zsphinx.conf'...
+indexing index 'xml'...
+source is stdin
+collected 13 docs, 0.1 MB
+sorted 0.0 Mhits, 100.0% done
+total 13 docs, 69734 bytes
+total 74.000 sec, 942 bytes/sec, 0.17 docs/sec
+total 3 reads, 3.000 sec, 9.5 kb/call avg, 1000.0 msec/call avg
+total 9 writes, 9.000 sec, 7.0 kb/call avg, 1000.0 msec/call avg

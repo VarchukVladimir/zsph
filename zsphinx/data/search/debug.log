@@ -1,0 +1,454 @@
+zrt_zcall_fcntl
+zrt_zcall_fcntl
+zrt_zcall_fcntl
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 403: DEBUG INFORMATION
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 404: user heap pointer address = 0x50bb94
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 405: user memory size = 4272833644
+000000000000000000000000000000000000000000000000000000000000
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 407: sizeof(struct ZVMChannel) = 48
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 412: envp[0] = 'VERBOSITY=3'
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 416: channels count = 7
+000000000000000000000000000000000000000000000000000000000000
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 421: channel[0].name = '/dev/stdin'
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 422: channel[0].type = 0
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 423: channel[0].size = 0
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 424: channel[0].limits[GetsLimit] = 999999
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 425: channel[0].limits[GetSizeLimit] = 999999
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 426: channel[0].limits[PutsLimit] = 0
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 427: channel[0].limits[PutSizeLimit] = 0
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 421: channel[1].name = '/dev/stdout'
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 422: channel[1].type = 0
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 423: channel[1].size = 0
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 424: channel[1].limits[GetsLimit] = 0
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 425: channel[1].limits[GetSizeLimit] = 0
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 426: channel[1].limits[PutsLimit] = 999999
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 427: channel[1].limits[PutSizeLimit] = 999999
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 421: channel[2].name = '/dev/stderr'
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 422: channel[2].type = 0
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 423: channel[2].size = 0
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 424: channel[2].limits[GetsLimit] = 0
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 425: channel[2].limits[GetSizeLimit] = 0
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 426: channel[2].limits[PutsLimit] = 9999999
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 427: channel[2].limits[PutSizeLimit] = 9999999
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 421: channel[3].name = '/dev/debug'
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 422: channel[3].type = 0
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 423: channel[3].size = 0
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 424: channel[3].limits[GetsLimit] = 0
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 425: channel[3].limits[GetSizeLimit] = 0
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 426: channel[3].limits[PutsLimit] = 99999999
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 427: channel[3].limits[PutSizeLimit] = 99999999
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 421: channel[4].name = '/dev/nvram'
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 422: channel[4].type = 0
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 423: channel[4].size = 0
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 424: channel[4].limits[GetsLimit] = 999999
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 425: channel[4].limits[GetSizeLimit] = 999999
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 426: channel[4].limits[PutsLimit] = 0
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 427: channel[4].limits[PutSizeLimit] = 0
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 421: channel[5].name = '/dev/mount/config'
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 422: channel[5].type = 1
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 423: channel[5].size = 10240
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 424: channel[5].limits[GetsLimit] = 9999999
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 425: channel[5].limits[GetSizeLimit] = 9999999
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 426: channel[5].limits[PutsLimit] = 0
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 427: channel[5].limits[PutSizeLimit] = 0
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 421: channel[6].name = '/dev/mount/index'
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 422: channel[6].type = 1
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 423: channel[6].size = 0
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 424: channel[6].limits[GetsLimit] = 9999999
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 425: channel[6].limits[GetSizeLimit] = 9999999
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 426: channel[6].limits[PutsLimit] = 0
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 427: channel[6].limits[PutSizeLimit] = 0
+000000000000000000000000000000000000000000000000000000000000
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_zrt_setup, 430: _SC_PAGE_SIZE=65536
+L_EXTRA lib/fs/channels_mount.c; []; open_channel, 209: name=/dev/stdin, handle=0, mode=0 unknown, flags=0 unknown
+L_INFO lib/fs/channels_mount.c; []; check_channel_access_mode, 175: access_mode=0, canberead=1, canbewrite=0
+L_EXTRA lib/fs/channels_mount.c; []; open_channel, 244: channel open ok, handle=0 
+L_EXTRA lib/fs/channels_mount.c; []; open_channel, 209: name=/dev/stdout, handle=1, mode=0 unknown, flags=0 unknown
+L_INFO lib/fs/channels_mount.c; []; check_channel_access_mode, 175: access_mode=1, canberead=0, canbewrite=1
+L_INFO lib/fs/channels_mount.c; []; debug_mes_zrt_channel_runtime, 199: handle=1, flags= O_WRONLY, sequential_access_pos=0, random_access_pos=0
+L_EXTRA lib/fs/channels_mount.c; []; open_channel, 244: channel open ok, handle=1 
+L_EXTRA lib/fs/channels_mount.c; []; open_channel, 209: name=/dev/stderr, handle=2, mode=0 unknown, flags=0 unknown
+L_INFO lib/fs/channels_mount.c; []; check_channel_access_mode, 175: access_mode=1, canberead=0, canbewrite=1
+L_INFO lib/fs/channels_mount.c; []; debug_mes_zrt_channel_runtime, 199: handle=2, flags= O_WRONLY, sequential_access_pos=0, random_access_pos=0
+L_EXTRA lib/fs/channels_mount.c; []; open_channel, 244: channel open ok, handle=2 
+L_EXTRA memory/MemMount.cc; []; GetNode, 197: path=/dev
+L_INFO memory/MemMount.cc; []; Mkdir, 145: path=/dev
+L_SHORT lib/nvram/observers/fstab_observer.c; []; get_fstab_observer, 110: prepare section: fstab
+L_SHORT lib/helpers/conf_keys.c; []; add_key_to_list, 24: channel
+L_SHORT lib/helpers/conf_keys.c; []; add_key_to_list, 24: mountpoint
+L_SHORT lib/helpers/conf_keys.c; []; add_key_to_list, 24: access
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_open]; zrt_zcall_enhanced_open, 301: name=/dev/nvram flags=0 mode=0(octal)
+L_EXTRA lib/fs/mounts_manager.c; [ zrt_zcall_enhanced_open]; mm_mountinfo_bypath, 70: mounted_on_path=/dev
+L_EXTRA lib/fs/mounts_manager.c; [ zrt_zcall_enhanced_open]; mm_mountinfo_bypath, 70: mounted_on_path=/dev
+L_EXTRA lib/fs/channels_mount.c; [ zrt_zcall_enhanced_open]; open_channel, 209: name=/dev/nvram, handle=4, mode=0 unknown, flags=0 unknown
+L_INFO lib/fs/channels_mount.c; [ zrt_zcall_enhanced_open]; check_channel_access_mode, 175: access_mode=0, canberead=1, canbewrite=0
+L_INFO lib/fs/channels_mount.c; [ zrt_zcall_enhanced_open]; debug_mes_zrt_channel_runtime, 199: handle=4, flags=O_RDONLY, sequential_access_pos=0, random_access_pos=0
+L_EXTRA lib/fs/channels_mount.c; [ zrt_zcall_enhanced_open]; open_channel, 244: channel open ok, handle=4 
+L_SHORT lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_open]; zrt_zcall_enhanced_open, 321: ret=0x0 newfd=4, name=/dev/nvram, flags=O_RDONLY, mode=none
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_read]; zrt_zcall_enhanced_read, 212: handle=4 buf=0x50d2a0 count=10240
+L_INFO lib/fs/channels_mount.c; [ zrt_zcall_enhanced_read]; channels_read, 597: channel name=/dev/nvram
+L_INFO lib/fs/channels_mount.c; [ zrt_zcall_enhanced_read]; debug_mes_zrt_channel_runtime, 199: handle=4, flags=O_RDONLY, sequential_access_pos=0, random_access_pos=0
+L_EXTRA lib/fs/channels_mount.c; [ zrt_zcall_enhanced_read]; channels_read, 620: channel fd=4, bytes readed=321
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_read]; zrt_zcall_enhanced_read, 222: ret=0x0 bytes_read=321, handle=4
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_close]; zrt_zcall_enhanced_close, 194: handle=4
+L_EXTRA lib/fs/channels_mount.c; [ zrt_zcall_enhanced_close]; channels_close, 779: fd=4
+L_EXTRA lib/fs/channels_mount.c; [ zrt_zcall_enhanced_close]; channels_close, 787: closed channel=/dev/nvram
+L_SHORT lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_close]; zrt_zcall_enhanced_close, 198: ret=0x0 handle=4
+L_INFO lib/nvram/nvram_loader.c; []; nearest_section_start, 48: whole_size=321, cursor_pos=0
+L_SHORT lib/nvram/nvram_loader.c; []; nearest_section_start, 77: new section fstab start =181
+L_INFO lib/nvram/nvram_loader.c; []; get_config_structure, 104: section fstab, cursor=181
+L_INFO lib/nvram/nvram_loader.c; []; get_config_structure, 114: section fstab, newcursor=186
+L_INFO lib/nvram/nvram_loader.c; []; nearest_section_start, 48: whole_size=321, cursor_pos=186
+L_INFO lib/nvram/nvram_loader.c; []; nearest_section_start, 54: no begin of section located
+L_INFO lib/nvram/nvram_loader.c; []; nvram_parse, 213: sections count 1
+L_SHORT lib/nvram/nvram_loader.c; []; nvram_parse, 224: nvram successfully validated section fstab
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 130: parsing
+L_EXTRA lib/helpers/conf_parser.c; []; conf_parse, 152: cursor=8 EStToken
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 185: swicth EStToken: lex_cursor=0, lex_length=8, pointer=0x50d355
+L_EXTRA lib/helpers/conf_parser.c; []; conf_parse, 189: lex= '[fstab] '
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 196: swicth EStToken: striped token len=7, pointer=0x50d355
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 202: token= '[fstab]'
+L_ERROR lib/helpers/conf_parser.c; []; conf_parse, 237: last token parsing error
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 273: restore previous parsing state
+L_EXTRA lib/helpers/conf_parser.c; []; conf_parse, 142: cursor=9 EStComment
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 185: swicth EStToken: lex_cursor=9, lex_length=0, pointer=0x50d35e
+L_EXTRA lib/helpers/conf_parser.c; []; conf_parse, 189: lex= ''
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 196: swicth EStToken: striped token len=0, pointer=0x50d35e
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 273: restore previous parsing state
+L_EXTRA lib/helpers/conf_parser.c; []; conf_parse, 158: cursor=30 EStProcessing
+L_EXTRA lib/helpers/conf_parser.c; []; conf_parse, 152: cursor=55 EStToken
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 185: swicth EStToken: lex_cursor=31, lex_length=24, pointer=0x50d374
+L_EXTRA lib/helpers/conf_parser.c; []; conf_parse, 189: lex= 'channel=/dev/mount/index'
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 196: swicth EStToken: striped token len=24, pointer=0x50d374
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 202: token= 'channel=/dev/mount/index'
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 220: key found, name=channel index=0
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 273: restore previous parsing state
+L_EXTRA lib/helpers/conf_parser.c; []; conf_parse, 152: cursor=75 EStToken
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 185: swicth EStToken: lex_cursor=56, lex_length=19, pointer=0x50d38d
+L_EXTRA lib/helpers/conf_parser.c; []; conf_parse, 189: lex= '  mountpoint=/index'
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 196: swicth EStToken: striped token len=17, pointer=0x50d38f
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 202: token= 'mountpoint=/index'
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 220: key found, name=mountpoinçO index=1
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 273: restore previous parsing state
+L_EXTRA lib/helpers/conf_parser.c; []; conf_parse, 152: cursor=86 EStToken
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 185: swicth EStToken: lex_cursor=76, lex_length=10, pointer=0x50d3a1
+L_EXTRA lib/helpers/conf_parser.c; []; conf_parse, 189: lex= ' access=ro'
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 196: swicth EStToken: striped token len=9, pointer=0x50d3a2
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 202: token= 'access=ro'
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 220: key found, name=accessoinçO index=2
+L_SHORT lib/helpers/conf_parser.c; []; conf_parse, 243: key_list->count =3
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 249: save record #1
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 253: save record OK
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 273: restore previous parsing state
+L_EXTRA lib/helpers/conf_parser.c; []; conf_parse, 152: cursor=112 EStToken
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 185: swicth EStToken: lex_cursor=87, lex_length=25, pointer=0x50d3ac
+L_EXTRA lib/helpers/conf_parser.c; []; conf_parse, 189: lex= 'channel=/dev/mount/config'
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 196: swicth EStToken: striped token len=25, pointer=0x50d3ac
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 202: token= 'channel=/dev/mount/config'
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 220: key found, name=channelinçO index=0
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 273: restore previous parsing state
+L_EXTRA lib/helpers/conf_parser.c; []; conf_parse, 152: cursor=127 EStToken
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 185: swicth EStToken: lex_cursor=113, lex_length=14, pointer=0x50d3c6
+L_EXTRA lib/helpers/conf_parser.c; []; conf_parse, 189: lex= '  mountpoint=/'
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 196: swicth EStToken: striped token len=12, pointer=0x50d3c8
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 202: token= 'mountpoint=/'
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 220: key found, name=mountpoinçO index=1
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 273: restore previous parsing state
+L_EXTRA lib/helpers/conf_parser.c; []; conf_parse, 152: cursor=138 EStToken
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 185: swicth EStToken: lex_cursor=128, lex_length=10, pointer=0x50d3d5
+L_EXTRA lib/helpers/conf_parser.c; []; conf_parse, 189: lex= ' access=ro'
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 196: swicth EStToken: striped token len=9, pointer=0x50d3d6
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 202: token= 'access=ro'
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 220: key found, name=accessoinçO index=2
+L_SHORT lib/helpers/conf_parser.c; []; conf_parse, 243: key_list->count =3
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 249: save record #2
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 253: save record OK
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 273: restore previous parsing state
+L_EXTRA lib/helpers/conf_parser.c; []; conf_parse, 152: cursor=139 EStToken
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 185: swicth EStToken: lex_cursor=139, lex_length=0, pointer=0x50d3e0
+L_EXTRA lib/helpers/conf_parser.c; []; conf_parse, 189: lex= ''
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 196: swicth EStToken: striped token len=0, pointer=0x50d3e0
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 273: restore previous parsing state
+L_INFO lib/helpers/conf_parser.c; []; conf_parse, 285: return records
+L_INFO lib/nvram/nvram_loader.c; []; parse_section, 169: nvram parsed record count=2
+L_SHORT lib/nvram/observers/fstab_observer.c; []; handle_fstab_record, 53: fstab record: channel=/dev/mount/index, mount_path=/index, access=ro
+L_EXTRA lib/fs/channels_mount.c; []; open_channel, 209: name=/dev/mount/index, handle=6, mode=0 unknown, flags=0 unknown
+L_INFO lib/fs/channels_mount.c; []; check_channel_access_mode, 175: access_mode=0, canberead=1, canbewrite=0
+L_INFO lib/fs/channels_mount.c; []; debug_mes_zrt_channel_runtime, 199: handle=6, flags=O_RDONLY, sequential_access_pos=0, random_access_pos=0
+L_EXTRA lib/fs/channels_mount.c; []; open_channel, 244: channel open ok, handle=6 
+L_SHORT lib/fs/unpack/image_engine.c; []; deploy_image, 109: mount_path=/index
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_stat]; zrt_zcall_enhanced_stat, 326: pathname=/index stat=0xfffffa30
+L_EXTRA lib/fs/mounts_manager.c; [ zrt_zcall_enhanced_stat]; mm_mountinfo_bypath, 70: mounted_on_path=/
+L_EXTRA lib/fs/mounts_manager.c; [ zrt_zcall_enhanced_stat]; mm_mountinfo_bypath, 70: mounted_on_path=/
+L_EXTRA memory/MemMount.cc; [ zrt_zcall_enhanced_stat]; GetNode, 197: path=/index
+L_SHORT lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_stat]; zrt_zcall_enhanced_stat, 337: ret=0xffffffff errno=2 pathname=/index
+L_INFO lib/libc/mkdir.c; [ zrt_zcall_mkdir]; zrt_zcall_mkdir, 41: pathname=0x4f5b60, mode=700(octal)
+L_EXTRA lib/fs/mounts_manager.c; [ zrt_zcall_mkdir]; mm_mountinfo_bypath, 70: mounted_on_path=/
+L_EXTRA lib/fs/mounts_manager.c; [ zrt_zcall_mkdir]; mm_mountinfo_bypath, 70: mounted_on_path=/
+L_EXTRA memory/MemMount.cc; [ zrt_zcall_mkdir]; GetNode, 197: path=/index
+L_INFO memory/MemMount.cc; [ zrt_zcall_mkdir]; Mkdir, 145: path=/index
+L_EXTRA lib/fs/mounts_manager.c; [ zrt_zcall_mkdir]; mm_mountinfo_bypath, 70: mounted_on_path=/
+L_EXTRA lib/fs/mounts_manager.c; [ zrt_zcall_mkdir]; mm_mountinfo_bypath, 70: mounted_on_path=/
+L_EXTRA memory/MemMount.cc; [ zrt_zcall_mkdir]; GetNode, 197: path=/index
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_mkdir]; zrt_zcall_enhanced_gettod, 183: tv->nacl_abi_tv_sec=0, tv->nacl_abi_tv_usec=0
+L_EXTRA memory/MemNode.cc; [ zrt_zcall_mkdir]; stat, 84: stat st_atime=0
+L_EXTRA memory/MemNode.cc; [ zrt_zcall_mkdir]; stat, 85: stat ino=3
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_mkdir]; zrt_zcall_enhanced_gettod, 183: tv->nacl_abi_tv_sec=1, tv->nacl_abi_tv_usec=0
+L_EXTRA memory/MemNode.cc; [ zrt_zcall_mkdir]; stat, 84: stat st_atime=1
+L_EXTRA memory/MemNode.cc; [ zrt_zcall_mkdir]; stat, 85: stat ino=3
+2 lib/libc/mkdir.c; [ zrt_zcall_mkdir]; zrt_zcall_mkdir, 55: st_dev=0,
+st_ino=3,
+nlink=2,
+st_mode= S_IFDIR|S_IRWXU|S_IRUSR|S_IWUSR|S_IXUSR,
+st_blksize=1024,
+st_size=0,
+st_blocks=0,
+st_atime=1,
+st_mtime=1
+L_SHORT lib/libc/mkdir.c; [ zrt_zcall_mkdir]; zrt_zcall_mkdir, 64: ret=0x0 pathname=/index, mode=700(octal)
+L_EXTRA lib/fs/unpack/parse_path.c; []; create_dir_and_cache_name, 56: mkdir errno=0, ret=0: /index
+L_INFO lib/fs/unpack/unpack_tar.c; []; unpack_tar, 47: /index
+L_INFO lib/fs/channels_mount.c; []; channels_read, 597: channel name=/dev/mount/index
+L_INFO lib/fs/channels_mount.c; []; debug_mes_zrt_channel_runtime, 199: handle=6, flags=O_RDONLY, sequential_access_pos=0, random_access_pos=0
+L_EXTRA lib/fs/channels_mount.c; []; channels_read, 620: channel fd=6, bytes readed=0
+L_SHORT lib/fs/unpack/unpack_tar.c; []; unpack_tar, 103: created 0 files
+L_SHORT lib/nvram/observers/fstab_observer.c; []; handle_fstab_record, 82: From /dev/mount/index archive readed and injected 0 files into /index folder of ZRT filesystem
+L_SHORT lib/fs/unpack/stream_reader.c; []; free_stream_reader, 43: close channel fd=6
+L_EXTRA lib/fs/channels_mount.c; []; channels_close, 779: fd=6
+L_EXTRA lib/fs/channels_mount.c; []; channels_close, 787: closed channel=/dev/mount/index
+000000000000000000000000000000000000000000000000000000000000
+L_SHORT lib/nvram/observers/fstab_observer.c; []; handle_fstab_record, 53: fstab record: channel=/dev/mount/config, mount_path=/, access=ro
+L_EXTRA lib/fs/channels_mount.c; []; open_channel, 209: name=/dev/mount/config, handle=5, mode=0 unknown, flags=0 unknown
+L_INFO lib/fs/channels_mount.c; []; check_channel_access_mode, 175: access_mode=0, canberead=1, canbewrite=0
+L_INFO lib/fs/channels_mount.c; []; debug_mes_zrt_channel_runtime, 199: handle=5, flags=O_RDONLY, sequential_access_pos=0, random_access_pos=0
+L_EXTRA lib/fs/channels_mount.c; []; open_channel, 244: channel open ok, handle=5 
+L_SHORT lib/fs/unpack/image_engine.c; []; deploy_image, 109: mount_path=/
+L_EXTRA lib/fs/unpack/parse_path.c; []; create_dir_and_cache_name, 60: already created dir: /(len=1)
+L_INFO lib/fs/unpack/unpack_tar.c; []; unpack_tar, 47: /
+L_INFO lib/fs/channels_mount.c; []; channels_read, 597: channel name=/dev/mount/config
+L_INFO lib/fs/channels_mount.c; []; debug_mes_zrt_channel_runtime, 199: handle=5, flags=O_RDONLY, sequential_access_pos=0, random_access_pos=0
+L_EXTRA lib/fs/channels_mount.c; []; channels_read, 620: channel fd=5, bytes readed=512
+L_INFO lib/fs/unpack/image_engine.c; []; extract_entry, 53: type=ETypeFile, name=/zsphinx.conf, entry_size=2183
+L_EXTRA lib/fs/unpack/parse_path.c; []; create_dir_and_cache_name, 60: already created dir: /zsphinx.conf(len=1)
+L_INFO lib/fs/unpack/parse_path.c; []; parse_path, 111: found in cache path=/zsphinx.conf
+L_INFO lib/fs/unpack/image_engine.c; []; extract_entry, 63: parsed_dir_count=0
+L_EXTRA lib/fs/mounts_manager.c; []; mm_mountinfo_bypath, 70: mounted_on_path=/
+L_EXTRA lib/fs/mounts_manager.c; []; mm_mountinfo_bypath, 70: mounted_on_path=/
+L_INFO memory/MemMount.cc; []; Open, 46: handle flag: O_CREAT
+L_EXTRA memory/MemMount.cc; []; Creat, 105: parent slot=1
+L_EXTRA memory/MemMount.cc; []; Creat, 124: created slot=4
+L_INFO lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_gettod, 183: tv->nacl_abi_tv_sec=2, tv->nacl_abi_tv_usec=0
+L_EXTRA memory/MemNode.cc; []; stat, 84: stat st_atime=2
+L_EXTRA memory/MemNode.cc; []; stat, 85: stat ino=4
+L_INFO memory/MemMount.cc; []; Open, 66: /zsphinx.conf Creat OK
+L_INFO memory/MemMount.cc; []; Ref, 456: before inode=4 use_count=0
+L_INFO memory/MemMount.cc; []; Ref, 458: after inode=4 use_count=1
+L_EXTRA memory/MemMount.cc; []; GetNode, 197: path=/zsphinx.conf
+L_INFO lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_gettod, 183: tv->nacl_abi_tv_sec=3, tv->nacl_abi_tv_usec=0
+L_EXTRA memory/MemNode.cc; []; stat, 84: stat st_atime=3
+L_EXTRA memory/MemNode.cc; []; stat, 85: stat ino=4
+L_INFO lib/fs/handle_allocator.c; []; seek_unused_slot, 46: slot index=10, EHandleAvailable
+L_EXTRA lib/fs/handle_allocator.c; []; set_inode, 70: inode=4
+L_EXTRA lib/fs/mem_mount_wraper.cc; []; mem_open, 409: errcode ret=0
+L_INFO lib/fs/channels_mount.c; []; channels_read, 597: channel name=/dev/mount/config
+L_INFO lib/fs/channels_mount.c; []; debug_mes_zrt_channel_runtime, 199: handle=5, flags=O_RDONLY, sequential_access_pos=0, random_access_pos=512
+L_EXTRA lib/fs/channels_mount.c; []; channels_read, 620: channel fd=5, bytes readed=512
+L_EXTRA lib/fs/handle_allocator.c; []; get_inode, 63: handle=10, inode=4, inode pointer=0x501d28
+L_INFO lib/fs/handle_allocator.c; []; set_offset, 84: 10
+L_INFO lib/fs/handle_allocator.c; []; set_offset, 85: 0
+L_INFO lib/fs/handle_allocator.c; []; set_offset, 86: 512
+L_INFO lib/fs/channels_mount.c; []; channels_read, 597: channel name=/dev/mount/config
+L_INFO lib/fs/channels_mount.c; []; debug_mes_zrt_channel_runtime, 199: handle=5, flags=O_RDONLY, sequential_access_pos=0, random_access_pos=1024
+L_EXTRA lib/fs/channels_mount.c; []; channels_read, 620: channel fd=5, bytes readed=512
+L_EXTRA lib/fs/handle_allocator.c; []; get_inode, 63: handle=10, inode=4, inode pointer=0x501d28
+L_INFO lib/fs/handle_allocator.c; []; set_offset, 84: 10
+L_INFO lib/fs/handle_allocator.c; []; set_offset, 85: 512
+L_INFO lib/fs/handle_allocator.c; []; set_offset, 86: 1024
+L_INFO lib/fs/channels_mount.c; []; channels_read, 597: channel name=/dev/mount/config
+L_INFO lib/fs/channels_mount.c; []; debug_mes_zrt_channel_runtime, 199: handle=5, flags=O_RDONLY, sequential_access_pos=0, random_access_pos=1536
+L_EXTRA lib/fs/channels_mount.c; []; channels_read, 620: channel fd=5, bytes readed=512
+L_EXTRA lib/fs/handle_allocator.c; []; get_inode, 63: handle=10, inode=4, inode pointer=0x501d28
+L_INFO lib/fs/handle_allocator.c; []; set_offset, 84: 10
+L_INFO lib/fs/handle_allocator.c; []; set_offset, 85: 1024
+L_INFO lib/fs/handle_allocator.c; []; set_offset, 86: 1536
+L_INFO lib/fs/channels_mount.c; []; channels_read, 597: channel name=/dev/mount/config
+L_INFO lib/fs/channels_mount.c; []; debug_mes_zrt_channel_runtime, 199: handle=5, flags=O_RDONLY, sequential_access_pos=0, random_access_pos=2048
+L_EXTRA lib/fs/channels_mount.c; []; channels_read, 620: channel fd=5, bytes readed=512
+L_EXTRA lib/fs/handle_allocator.c; []; get_inode, 63: handle=10, inode=4, inode pointer=0x501d28
+L_INFO lib/fs/handle_allocator.c; []; set_offset, 84: 10
+L_INFO lib/fs/handle_allocator.c; []; set_offset, 85: 1536
+L_INFO lib/fs/handle_allocator.c; []; set_offset, 86: 2048
+L_INFO lib/fs/channels_mount.c; []; channels_read, 597: channel name=/dev/mount/config
+L_INFO lib/fs/channels_mount.c; []; debug_mes_zrt_channel_runtime, 199: handle=5, flags=O_RDONLY, sequential_access_pos=0, random_access_pos=2560
+L_EXTRA lib/fs/channels_mount.c; []; channels_read, 620: channel fd=5, bytes readed=512
+L_EXTRA lib/fs/handle_allocator.c; []; get_inode, 63: handle=10, inode=4, inode pointer=0x501d28
+L_INFO lib/fs/handle_allocator.c; []; set_offset, 84: 10
+L_INFO lib/fs/handle_allocator.c; []; set_offset, 85: 2048
+L_INFO lib/fs/handle_allocator.c; []; set_offset, 86: 2183
+L_SHORT lib/fs/unpack/image_engine.c; []; extract_entry, 96:    2183 B saved : /zsphinx.conf
+L_EXTRA lib/fs/handle_allocator.c; []; get_inode, 63: handle=10, inode=4, inode pointer=0x501d28
+L_INFO memory/MemMount.cc; []; Unref, 469: before inode=4 use_count=1
+L_INFO memory/MemMount.cc; []; Unref, 471: after inode=4 use_count=0
+L_INFO lib/fs/channels_mount.c; []; channels_read, 597: channel name=/dev/mount/config
+L_INFO lib/fs/channels_mount.c; []; debug_mes_zrt_channel_runtime, 199: handle=5, flags=O_RDONLY, sequential_access_pos=0, random_access_pos=3072
+L_EXTRA lib/fs/channels_mount.c; []; channels_read, 620: channel fd=5, bytes readed=512
+L_INFO lib/fs/unpack/image_engine.c; []; extract_entry, 53: type=ETypeDir, name=/index/, entry_size=0
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_stat]; zrt_zcall_enhanced_stat, 326: pathname=/index/ stat=0xffffe560
+L_EXTRA lib/fs/mounts_manager.c; [ zrt_zcall_enhanced_stat]; mm_mountinfo_bypath, 70: mounted_on_path=/
+L_EXTRA lib/fs/mounts_manager.c; [ zrt_zcall_enhanced_stat]; mm_mountinfo_bypath, 70: mounted_on_path=/
+L_EXTRA memory/MemMount.cc; [ zrt_zcall_enhanced_stat]; GetNode, 197: path=/index/
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_stat]; zrt_zcall_enhanced_gettod, 183: tv->nacl_abi_tv_sec=4, tv->nacl_abi_tv_usec=0
+L_EXTRA memory/MemNode.cc; [ zrt_zcall_enhanced_stat]; stat, 84: stat st_atime=4
+L_EXTRA memory/MemNode.cc; [ zrt_zcall_enhanced_stat]; stat, 85: stat ino=3
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_stat]; zrt_zcall_enhanced_gettod, 183: tv->nacl_abi_tv_sec=5, tv->nacl_abi_tv_usec=0
+L_EXTRA memory/MemNode.cc; [ zrt_zcall_enhanced_stat]; stat, 84: stat st_atime=5
+L_EXTRA memory/MemNode.cc; [ zrt_zcall_enhanced_stat]; stat, 85: stat ino=3
+2 lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_stat]; zrt_zcall_enhanced_stat, 335: st_dev=0,
+st_ino=3,
+nlink=2,
+st_mode= S_IFDIR|S_IRWXU|S_IRUSR|S_IWUSR|S_IXUSR,
+st_blksize=1024,
+st_size=0,
+st_blocks=0,
+st_atime=5,
+st_mtime=5
+L_SHORT lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_stat]; zrt_zcall_enhanced_stat, 337: ret=0x0 pathname=/index/
+L_EXTRA lib/fs/unpack/parse_path.c; []; create_dir_and_cache_name, 56: mkdir errno=17, ret=-1: /index/
+L_EXTRA lib/fs/unpack/parse_path.c; []; create_dir_and_cache_name, 60: already created dir: /index/(len=6)
+L_INFO lib/fs/unpack/image_engine.c; []; extract_entry, 63: parsed_dir_count=1
+L_EXTRA lib/fs/unpack/parse_path.c; []; create_dir_and_cache_name, 60: already created dir: /index/(len=7)
+L_INFO lib/fs/channels_mount.c; []; channels_read, 597: channel name=/dev/mount/config
+L_INFO lib/fs/channels_mount.c; []; debug_mes_zrt_channel_runtime, 199: handle=5, flags=O_RDONLY, sequential_access_pos=0, random_access_pos=3584
+L_EXTRA lib/fs/channels_mount.c; []; channels_read, 620: channel fd=5, bytes readed=512
+L_SHORT lib/fs/unpack/unpack_tar.c; []; unpack_tar, 103: created 2 files
+L_SHORT lib/nvram/observers/fstab_observer.c; []; handle_fstab_record, 82: From /dev/mount/config archive readed and injected 2 files into / folder of ZRT filesystem
+L_SHORT lib/fs/unpack/stream_reader.c; []; free_stream_reader, 43: close channel fd=5
+L_EXTRA lib/fs/channels_mount.c; []; channels_close, 779: fd=5
+L_EXTRA lib/fs/channels_mount.c; []; channels_close, 787: closed channel=/dev/mount/config
+000000000000000000000000000000000000000000000000000000000000
+L_SHORT lib/nvram/nvram_loader.c; []; nvram_parse, 229: nvram parsing result=2 for section: fstab
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_setup_finally, 134: nvram parse res=2
+L_INFO lib/zcalls/zcalls_zrt.c; []; zrt_setup_finally, 139: zrt startup finished
+000000000000000000000000000000000000000000000000000000000000
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_fstat]; zrt_zcall_enhanced_fstat, 272: handle=1 stat=0xffffed80
+L_EXTRA lib/fs/channels_mount.c; [ zrt_zcall_enhanced_fstat]; channels_fstat, 696: fd=1
+L_EXTRA lib/fs/channels_mount.c; [ zrt_zcall_enhanced_fstat]; set_stat, 415: fd=1
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_fstat]; zrt_zcall_enhanced_gettod, 183: tv->nacl_abi_tv_sec=6, tv->nacl_abi_tv_usec=0
+2 lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_fstat]; zrt_zcall_enhanced_fstat, 278: st_dev=2049,
+st_ino=12,
+nlink=1,
+st_mode= S_IFIFO|S_IWUSR,
+st_blksize=1,
+st_size=0,
+st_blocks=0,
+st_atime=6,
+st_mtime=6
+L_SHORT lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_fstat]; zrt_zcall_enhanced_fstat, 280: ret=0x0 handle=1
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_mmap]; zrt_zcall_enhanced_mmap, 365: addr=(nil) length=4096 prot=3 flags=34 fd=4294967295 off=0
+L_SHORT lib/memory/memory_syscall_handlers.c; [ zrt_zcall_enhanced_mmap]; memory_mmap, 156: malloc(4096) ret addr=0x50d268
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_mmap]; zrt_zcall_enhanced_mmap, 379: ret=0x0 addr=0x50d268 length=4096 prot= PROT_READ|PROT_WRITE flags= MAP_PRIVATE|MAP_ANON|MAP_ANONYMOUS fd=4294967295 off=0
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_open]; zrt_zcall_enhanced_open, 301: name=/etc/localtime flags=0 mode=0(octal)
+L_EXTRA lib/fs/mounts_manager.c; [ zrt_zcall_enhanced_open]; mm_mountinfo_bypath, 70: mounted_on_path=/
+L_EXTRA lib/fs/mounts_manager.c; [ zrt_zcall_enhanced_open]; mm_mountinfo_bypath, 70: mounted_on_path=/
+L_SHORT lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_open]; zrt_zcall_enhanced_open, 321: ret=0xffffffff errno=2 newfd=-1, name=/etc/localtime, flags=O_RDONLY, mode=none
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_fstat]; zrt_zcall_enhanced_fstat, 272: handle=0 stat=0xffffeda0
+L_EXTRA lib/fs/channels_mount.c; [ zrt_zcall_enhanced_fstat]; channels_fstat, 696: fd=0
+L_EXTRA lib/fs/channels_mount.c; [ zrt_zcall_enhanced_fstat]; set_stat, 415: fd=0
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_fstat]; zrt_zcall_enhanced_gettod, 183: tv->nacl_abi_tv_sec=7, tv->nacl_abi_tv_usec=0
+2 lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_fstat]; zrt_zcall_enhanced_fstat, 278: st_dev=2049,
+st_ino=11,
+nlink=1,
+st_mode= S_IFIFO|S_IRUSR,
+st_blksize=1,
+st_size=0,
+st_blocks=0,
+st_atime=7,
+st_mtime=7
+L_SHORT lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_fstat]; zrt_zcall_enhanced_fstat, 280: ret=0x0 handle=0
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_mmap]; zrt_zcall_enhanced_mmap, 365: addr=(nil) length=4096 prot=3 flags=34 fd=4294967295 off=0
+L_SHORT lib/memory/memory_syscall_handlers.c; [ zrt_zcall_enhanced_mmap]; memory_mmap, 156: malloc(4096) ret addr=0x50e270
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_mmap]; zrt_zcall_enhanced_mmap, 379: ret=0x0 addr=0x50e270 length=4096 prot= PROT_READ|PROT_WRITE flags= MAP_PRIVATE|MAP_ANON|MAP_ANONYMOUS fd=4294967295 off=0
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_read]; zrt_zcall_enhanced_read, 212: handle=0 buf=0xfffff7c0 count=1023
+L_INFO lib/fs/channels_mount.c; [ zrt_zcall_enhanced_read]; channels_read, 597: channel name=/dev/stdin
+L_EXTRA lib/fs/channels_mount.c; [ zrt_zcall_enhanced_read]; channels_read, 620: channel fd=0, bytes readed=8
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_read]; zrt_zcall_enhanced_read, 222: ret=0x0 bytes_read=8, handle=0
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_read]; zrt_zcall_enhanced_read, 212: handle=0 buf=0xfffff7c8 count=1015
+L_INFO lib/fs/channels_mount.c; [ zrt_zcall_enhanced_read]; channels_read, 597: channel name=/dev/stdin
+L_EXTRA lib/fs/channels_mount.c; [ zrt_zcall_enhanced_read]; channels_read, 620: channel fd=0, bytes readed=0
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_read]; zrt_zcall_enhanced_read, 222: ret=0x0 bytes_read=0, handle=0
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_open]; zrt_zcall_enhanced_open, 301: name=zsphinx.conf flags=0 mode=0(octal)
+L_EXTRA lib/fs/mounts_manager.c; [ zrt_zcall_enhanced_open]; mm_mountinfo_bypath, 70: mounted_on_path=/
+L_EXTRA lib/fs/mounts_manager.c; [ zrt_zcall_enhanced_open]; mm_mountinfo_bypath, 70: mounted_on_path=/
+L_INFO memory/MemMount.cc; [ zrt_zcall_enhanced_open]; Ref, 456: before inode=4 use_count=0
+L_INFO memory/MemMount.cc; [ zrt_zcall_enhanced_open]; Ref, 458: after inode=4 use_count=1
+L_EXTRA memory/MemMount.cc; [ zrt_zcall_enhanced_open]; GetNode, 197: path=/zsphinx.conf
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_open]; zrt_zcall_enhanced_gettod, 183: tv->nacl_abi_tv_sec=8, tv->nacl_abi_tv_usec=0
+L_EXTRA memory/MemNode.cc; [ zrt_zcall_enhanced_open]; stat, 84: stat st_atime=8
+L_EXTRA memory/MemNode.cc; [ zrt_zcall_enhanced_open]; stat, 85: stat ino=4
+L_INFO lib/fs/handle_allocator.c; [ zrt_zcall_enhanced_open]; seek_unused_slot, 46: slot index=10, EHandleAvailable
+L_EXTRA lib/fs/handle_allocator.c; [ zrt_zcall_enhanced_open]; set_inode, 70: inode=4
+L_EXTRA lib/fs/mem_mount_wraper.cc; [ zrt_zcall_enhanced_open]; mem_open, 409: errcode ret=0
+L_SHORT lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_open]; zrt_zcall_enhanced_open, 321: ret=0x0 newfd=10, name=zsphinx.conf, flags=O_RDONLY, mode=none
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_fstat]; zrt_zcall_enhanced_fstat, 272: handle=10 stat=0xffffcba0
+L_EXTRA lib/fs/handle_allocator.c; [ zrt_zcall_enhanced_fstat]; get_inode, 63: handle=10, inode=4, inode pointer=0x501d28
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_fstat]; zrt_zcall_enhanced_gettod, 183: tv->nacl_abi_tv_sec=9, tv->nacl_abi_tv_usec=0
+L_EXTRA memory/MemNode.cc; [ zrt_zcall_enhanced_fstat]; stat, 84: stat st_atime=9
+L_EXTRA memory/MemNode.cc; [ zrt_zcall_enhanced_fstat]; stat, 85: stat ino=4
+2 lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_fstat]; zrt_zcall_enhanced_fstat, 278: st_dev=0,
+st_ino=4,
+nlink=1,
+st_mode= S_IFREG,
+st_blksize=1024,
+st_size=2183,
+st_blocks=0,
+st_atime=9,
+st_mtime=9
+L_SHORT lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_fstat]; zrt_zcall_enhanced_fstat, 280: ret=0x0 handle=10
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_mmap]; zrt_zcall_enhanced_mmap, 365: addr=(nil) length=4096 prot=3 flags=34 fd=4294967295 off=0
+L_SHORT lib/memory/memory_syscall_handlers.c; [ zrt_zcall_enhanced_mmap]; memory_mmap, 156: malloc(4096) ret addr=0x520ed8
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_mmap]; zrt_zcall_enhanced_mmap, 379: ret=0x0 addr=0x520ed8 length=4096 prot= PROT_READ|PROT_WRITE flags= MAP_PRIVATE|MAP_ANON|MAP_ANONYMOUS fd=4294967295 off=0
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_read]; zrt_zcall_enhanced_read, 212: handle=10 buf=0x520ed8 count=1024
+L_EXTRA lib/fs/handle_allocator.c; [ zrt_zcall_enhanced_read]; get_inode, 63: handle=10, inode=4, inode pointer=0x501d28
+L_EXTRA memory/MemMount.cc; [ zrt_zcall_enhanced_read]; Read, 519: slot=4, offset=0, buf=0x520ed8, count=1024 
+L_INFO lib/fs/handle_allocator.c; [ zrt_zcall_enhanced_read]; set_offset, 84: 10
+L_INFO lib/fs/handle_allocator.c; [ zrt_zcall_enhanced_read]; set_offset, 85: 0
+L_INFO lib/fs/handle_allocator.c; [ zrt_zcall_enhanced_read]; set_offset, 86: 1024
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_read]; zrt_zcall_enhanced_read, 222: ret=0x0 bytes_read=1024, handle=10
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_read]; zrt_zcall_enhanced_read, 212: handle=10 buf=0x520ed8 count=1024
+L_EXTRA lib/fs/handle_allocator.c; [ zrt_zcall_enhanced_read]; get_inode, 63: handle=10, inode=4, inode pointer=0x501d28
+L_EXTRA memory/MemMount.cc; [ zrt_zcall_enhanced_read]; Read, 519: slot=4, offset=1024, buf=0x520ed8, count=1024 
+L_INFO lib/fs/handle_allocator.c; [ zrt_zcall_enhanced_read]; set_offset, 84: 10
+L_INFO lib/fs/handle_allocator.c; [ zrt_zcall_enhanced_read]; set_offset, 85: 1024
+L_INFO lib/fs/handle_allocator.c; [ zrt_zcall_enhanced_read]; set_offset, 86: 2048
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_read]; zrt_zcall_enhanced_read, 222: ret=0x0 bytes_read=1024, handle=10
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_read]; zrt_zcall_enhanced_read, 212: handle=10 buf=0x520ed8 count=1024
+L_EXTRA lib/fs/handle_allocator.c; [ zrt_zcall_enhanced_read]; get_inode, 63: handle=10, inode=4, inode pointer=0x501d28
+L_EXTRA memory/MemMount.cc; [ zrt_zcall_enhanced_read]; Read, 519: slot=4, offset=2048, buf=0x520ed8, count=1024 
+L_SHORT memory/MemMount.cc; [ zrt_zcall_enhanced_read]; Read, 542: To expensive count=1024 limited to len=135
+L_INFO lib/fs/handle_allocator.c; [ zrt_zcall_enhanced_read]; set_offset, 84: 10
+L_INFO lib/fs/handle_allocator.c; [ zrt_zcall_enhanced_read]; set_offset, 85: 2048
+L_INFO lib/fs/handle_allocator.c; [ zrt_zcall_enhanced_read]; set_offset, 86: 2183
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_read]; zrt_zcall_enhanced_read, 222: ret=0x0 bytes_read=135, handle=10
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_read]; zrt_zcall_enhanced_read, 212: handle=10 buf=0x520ed8 count=1024
+L_EXTRA lib/fs/handle_allocator.c; [ zrt_zcall_enhanced_read]; get_inode, 63: handle=10, inode=4, inode pointer=0x501d28
+L_EXTRA memory/MemMount.cc; [ zrt_zcall_enhanced_read]; Read, 519: slot=4, offset=2183, buf=0x520ed8, count=1024 
+L_SHORT memory/MemMount.cc; [ zrt_zcall_enhanced_read]; Read, 542: To expensive count=1024 limited to len=0
+L_INFO lib/fs/handle_allocator.c; [ zrt_zcall_enhanced_read]; set_offset, 84: 10
+L_INFO lib/fs/handle_allocator.c; [ zrt_zcall_enhanced_read]; set_offset, 85: 2183
+L_INFO lib/fs/handle_allocator.c; [ zrt_zcall_enhanced_read]; set_offset, 86: 2183
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_read]; zrt_zcall_enhanced_read, 222: ret=0x0 bytes_read=0, handle=10
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_close]; zrt_zcall_enhanced_close, 194: handle=10
+L_EXTRA lib/fs/handle_allocator.c; [ zrt_zcall_enhanced_close]; get_inode, 63: handle=10, inode=4, inode pointer=0x501d28
+L_INFO memory/MemMount.cc; [ zrt_zcall_enhanced_close]; Unref, 469: before inode=4 use_count=1
+L_INFO memory/MemMount.cc; [ zrt_zcall_enhanced_close]; Unref, 471: after inode=4 use_count=0
+L_SHORT lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_close]; zrt_zcall_enhanced_close, 198: ret=0x0 handle=10
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_munmap]; zrt_zcall_enhanced_munmap, 384: addr=0x520ed8, len=4096
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_munmap]; zrt_zcall_enhanced_munmap, 386: ret=0x0 addr=0x520ed8, len=4096
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_mmap]; zrt_zcall_enhanced_mmap, 365: addr=(nil) length=8 prot=3 flags=33 fd=4294967295 off=0
+L_SHORT lib/memory/memory_syscall_handlers.c; [ zrt_zcall_enhanced_mmap]; memory_mmap, 156: malloc(8) ret addr=0x523c78
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_mmap]; zrt_zcall_enhanced_mmap, 379: ret=0x0 addr=0x523c78 length=8 prot= PROT_READ|PROT_WRITE flags= MAP_SHARED|MAP_ANON|MAP_ANONYMOUS fd=4294967295 off=0
+L_INFO lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_open]; zrt_zcall_enhanced_open, 301: name=index/index.sph flags=0 mode=0(octal)
+L_EXTRA lib/fs/mounts_manager.c; [ zrt_zcall_enhanced_open]; mm_mountinfo_bypath, 70: mounted_on_path=/
+L_EXTRA lib/fs/mounts_manager.c; [ zrt_zcall_enhanced_open]; mm_mountinfo_bypath, 70: mounted_on_path=/
+L_SHORT lib/zcalls/zcalls_zrt.c; [ zrt_zcall_enhanced_open]; zrt_zcall_enhanced_open, 321: ret=0xffffffff errno=2 newfd=-1, name=index/index.sph, flags=O_RDONLY, mode=none
+L_SHORT lib/zcalls/zcalls_zrt.c; []; zrt_zcall_enhanced_exit, 163: status 1 exiting...
