@@ -1,6 +1,0 @@
-Sphinx 2.0.6-release (r3473)
-Copyright (c) 2001-2012, Andrew Aksyonoff
-Copyright (c) 2008-2012, Sphinx Technologies Inc (http://sphinxsearch.com)
-
-using config file 'zsphinx.conf'...
-FATAL: failed to parse config file 'zsphinx.conf'
