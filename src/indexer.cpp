@@ -1527,6 +1527,7 @@ bool SendRotate ( const CSphConfig & hConf, bool bForce )
 	return true;
 }
 
+#define FSTAB_SAVE_TAR_ENABLE 1
 
 int main ( int argc, char ** argv )
 {
@@ -1543,13 +1544,32 @@ int main ( int argc, char ** argv )
 	CSphString sDumpRows;
 
 	int i;
+
+	FILE *f1;
+	f1 = fopen (argv[2], "r");
+	
+	if (!f1)
+		printf ("Config file %s not found\n", argv[2]);
+	
 	for ( i=1; i<argc; i++ )
 	{
+#ifndef X86_64_ZEROVM
+		if (i >= argc) 
+		{	
+			i++;
+			break;
+		}
+#endif
 		if ( ( !strcmp ( argv[i], "--config" ) || !strcmp ( argv[i], "-c" ) ) && (i+1)<argc )
 		{
 			sOptConfig = argv[++i];
-			if ( !sphIsReadable ( sOptConfig ) )
+			
+			if ( !( sOptConfig ) )
+			{
 				sphDie ( "config file '%s' does not exist or is not readable", sOptConfig );
+
+			}
+			
 
 		} else if ( strcasecmp ( argv[i], "--merge" )==0 && (i+2)<argc )
 		{
@@ -1626,6 +1646,10 @@ int main ( int argc, char ** argv )
 		}
 	}
 
+#ifndef X86_64_ZEROVM
+	SetSignalHandlers();
+#endif
+
 	if ( !g_bQuiet )
 		fprintf ( stdout, SPHINX_BANNER );
 
@@ -1685,13 +1709,12 @@ int main ( int argc, char ** argv )
 		fprintf ( stdout, "ERROR: nothing to do.\n" );
 		return 1;
 	}
-
+#ifndef X86_64_ZEROVM
 	SetSignalHandlers();
-
+#endif
 	///////////////
 	// load config
 	///////////////
-
 	CSphConfigParser cp;
 	CSphConfig & hConf = cp.m_tConf;
 	sOptConfig = sphLoadConfig ( sOptConfig, g_bQuiet, cp );
@@ -1723,10 +1746,11 @@ int main ( int argc, char ** argv )
 
 		sphSetThrottling ( hIndexer.GetInt ( "max_iops", 0 ), hIndexer.GetSize ( "max_iosize", 0 ) );
 	}
-
+	
 	/////////////////////
 	// index each index
 	////////////////////
+
 
 	FILE * fpDumpRows = NULL;
 	if ( !bMerge && !sDumpRows.IsEmpty() )
@@ -1759,7 +1783,10 @@ int main ( int argc, char ** argv )
 		hConf["index"].IterateStart ();
 		while ( hConf["index"].IterateNext() )
 		{
+						
 			bool bLastOk = DoIndex ( hConf["index"].IterateGet (), hConf["index"].IterateGetKey().cstr(), hConf["source"], bVerbose, fpDumpRows );
+
+			
 			bIndexedOk |= bLastOk;
 			if ( bLastOk && ( sphMicroTimer() - tmRotated > ROTATE_MIN_INTERVAL ) && SendRotate ( hConf, false ) )
 				tmRotated = sphMicroTimer();

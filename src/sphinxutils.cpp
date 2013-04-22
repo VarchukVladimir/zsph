@@ -38,6 +38,7 @@
 #include <signal.h>
 #endif
 
+
 /////////////////////////////////////////////////////////////////////////////
 
 static char * ltrim ( char * sLine )
@@ -1105,8 +1106,7 @@ const char * sphLoadConfig ( const char * sOptConfig, bool bQuiet, CSphConfigPar
 
 	if ( !bQuiet )
 		fprintf ( stdout, "using config file '%s'...\n", sOptConfig );
-/*zvm*/
-	printf ("zvm sphLoadConfig\n");
+
 	// load config
 	if ( !cp.Parse ( sOptConfig ) )
 		sphDie ( "failed to parse config file '%s'", sOptConfig );
@@ -1453,6 +1453,7 @@ void sphBacktrace ( int iFD, bool bSafe )
 #endif
 #ifdef X86_64_ZEROVM
 #define SIGRETURN_FRAME_OFFSET 23
+//		__asm __volatile__ ( "movq %%rbp,%0":"=r"(pFramePointer):"r"(pFramePointer) );
 
 #elif defined(__x86_64__)
 #define SIGRETURN_FRAME_OFFSET 23

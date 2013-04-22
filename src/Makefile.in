@@ -34,7 +34,7 @@ NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
 bin_PROGRAMS = indexer$(EXEEXT) search$(EXEEXT) \
-	spelldump$(EXEEXT) indextool$(EXEEXT)
+	spelldump$(EXEEXT) indextool$(EXEEXT) xmlpipecreator$(EXEEXT)
 noinst_PROGRAMS = tests$(EXEEXT)
 subdir = src
 DIST_COMMON = $(srcdir)/Makefile.am $(srcdir)/Makefile.in
@@ -87,6 +87,8 @@ am_tests_OBJECTS = tests.$(OBJEXT)
 tests_OBJECTS = $(am_tests_OBJECTS)
 tests_LDADD = $(LDADD)
 tests_DEPENDENCIES = $(am__DEPENDENCIES_2)
+
+
 DEFAULT_INCLUDES = -I.@am__isrc@ -I$(top_builddir)/config
 depcomp = $(SHELL) $(top_srcdir)/config/depcomp
 am__depfiles_maybe = depfiles
@@ -98,10 +100,10 @@ CXXLINK = $(CXXLD) $(AM_CXXFLAGS) $(CXXFLAGS) $(AM_LDFLAGS) $(LDFLAGS) \
 	-o $@
 SOURCES = $(libsphinx_a_SOURCES) $(indexer_SOURCES) \
 	$(indextool_SOURCES) $(search_SOURCES) \
-	$(spelldump_SOURCES) $(tests_SOURCES)
+	$(spelldump_SOURCES) $(tests_SOURCES) $(xmlpipecreator_SOURCES)
 DIST_SOURCES = $(libsphinx_a_SOURCES) $(indexer_SOURCES) \
 	$(indextool_SOURCES) $(search_SOURCES) \
-	$(spelldump_SOURCES) $(tests_SOURCES)
+	$(spelldump_SOURCES) $(tests_SOURCES) $(xmlpipecreator_SOURCES)
 ETAGS = etags
 CTAGS = ctags
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
@@ -218,6 +220,7 @@ search_SOURCES = search.cpp
 spelldump_SOURCES = spelldump.cpp
 indextool_SOURCES = indextool.cpp
 tests_SOURCES = tests.cpp
+xmlpipecreator_SOURCES = xmlpipecreator.c
 BUILT_SOURCES = extract-version
 AM_CPPFLAGS = -DSYSCONFDIR="\"$(sysconfdir)\"" -DDATADIR="\"$(localstatedir)/data\""
 COMMON_LIBS = libsphinx.a $(LIBSTEMMER_LIBS) $(MYSQL_LIBS) $(PGSQL_LIBS)
@@ -319,6 +322,8 @@ spelldump$(EXEEXT): $(spelldump_OBJECTS) $(spelldump_DEPENDENCIES)
 tests$(EXEEXT): $(tests_OBJECTS) $(tests_DEPENDENCIES) 
 	@rm -f tests$(EXEEXT)
 	$(CXXLINK) $(tests_OBJECTS) $(tests_LDADD) $(LIBS)
+xmlpipecreator$(EXEEXT): 
+	$(CC) -o xmlpipecreator$(EXEEXT)  xmlpipecreator.c $(LDFLAGS)
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT)
@@ -347,6 +352,7 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/sphinxstemru.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/sphinxutils.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/tests.Po@am__quote@
+
 
 .cpp.o:
 @am__fastdepCXX_TRUE@	$(CXXCOMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<

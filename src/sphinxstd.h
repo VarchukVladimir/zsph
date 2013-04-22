@@ -1953,26 +1953,29 @@ public:
 
 
 	/// deallocate storage
-	void Reset ()
+void Reset ()
 	{
 		if ( !m_pData )
 			return;
+/*ZVM*/
+#ifndef X86_64_ZEROVM
 
 #if USE_WINDOWS
 		delete [] m_pData;
 #else
+
+
 		if ( g_bHeadProcess )
 		{
 			int iRes = munmap ( m_pData, m_iLength );
 			if ( iRes )
 				sphWarn ( "munmap() failed: %s", strerror(errno) );
-
 #if SPH_ALLOCS_PROFILER
 			sphMemStatMMapDel ( m_iLength );
 #endif
 		}
 #endif // USE_WINDOWS
-
+#endif // X86_64_ZEROVM
 		m_pData = NULL;
 		m_iLength = 0;
 		m_iEntries = 0;

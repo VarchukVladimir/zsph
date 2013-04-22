@@ -1838,6 +1838,7 @@ void sphSleepMsec ( int iMsec )
 
 bool sphIsReadable ( const char * sPath, CSphString * pError )
 {
+
 	int iFD = ::open ( sPath, O_RDONLY );
 
 	if ( iFD<0 )
@@ -6692,7 +6693,7 @@ CSphArena::~CSphArena ()
 {
 	// notify callers that arena no longer exists
 	g_pMvaArena = NULL;
-	m_tThdMutex.Done();
+//	m_tThdMutex.Done();
 }
 
 DWORD * CSphArena::ReInit ( int uMaxBytes )
@@ -23675,8 +23676,13 @@ CSphSource * sphCreateSourceXmlpipe2 ( const CSphConfigSection * pSource, FILE *
 FILE * sphDetectXMLPipe ( const char * szCommand, BYTE * dBuf, int & iBufSize, int iMaxBufSize, bool & bUsePipe2 )
 {
 	bUsePipe2 = true; // default is xmlpipe2
-
+#ifdef X86_64_ZEROVM
+	FILE * pPipe = stdin; //fopen ( szCommand, "r" );
+	printf ("*source is stdin \n");
+#else
+	printf ("*source is xmlpipecomman form config \n");
 	FILE * pPipe = popen ( szCommand, "r" );
+#endif
 	if ( !pPipe )
 		return NULL;
 
