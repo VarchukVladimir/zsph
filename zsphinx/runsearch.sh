@@ -20,7 +20,7 @@ cp ../src/search 		search.nexe
 #./ns_start.sh 2
 
 #${SETARCH} ${ZEROVM_ROOT}/zerovm -Mindexer.manifest &
-${SETARCH} ${ZEROVM_ROOT}/zerovm -Msearch.manifest 
+${ZVM_PREFIX}/zerovm -Msearch.manifest 
 
 #cat data/indexer/stdout.data
 
