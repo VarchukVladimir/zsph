@@ -22,11 +22,13 @@ cp ../src/search 		search.nexe
 ${ZVM_PREFIX}/zerovm -Mindexer.manifest &
 ${ZVM_PREFIX}/zerovm -Mxmlpipecreator.manifest 
 
+./ns_stop.sh
+
 sleep 1
 
 cat data/indexer/stdout.data
 
-./ns_stop.sh
+
 
 
 ${ZVM_PREFIX}/zerovm -Msearch.manifest 
