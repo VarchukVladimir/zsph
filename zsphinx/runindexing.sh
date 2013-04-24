@@ -19,8 +19,8 @@ cp ../src/search 		search.nexe
 
 ./ns_start.sh 2
 
-${SETARCH} ${ZEROVM_ROOT}/zerovm -Mindexer.manifest &
-${SETARCH} ${ZEROVM_ROOT}/zerovm -Mxmlpipecreator.manifest 
+${ZVM_PREFIX}/zerovm -Mindexer.manifest &
+${ZVM_PREFIX}/zerovm -Mxmlpipecreator.manifest 
 
 sleep 1
 
@@ -29,7 +29,7 @@ cat data/indexer/stdout.data
 ./ns_stop.sh
 
 
-${SETARCH} ${ZEROVM_ROOT}/zerovm -Msearch.manifest 
+${ZVM_PREFIX}/zerovm -Msearch.manifest 
 
 cat data/search/stdout.data
 
