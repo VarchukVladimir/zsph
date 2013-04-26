@@ -4,6 +4,7 @@
 #include <sys/stat.h>
 #include <string.h>
 #include <stdlib.h>
+#include "../config/config.h"
 
 
 #define myout stdout
@@ -77,10 +78,11 @@ void mylistdir (char *path)
 			}
 //			fprintf(myout,"%s\n", extfile);
 			if ((strcmp (extfile ,".txt") == 0) /*|| (strcmp (extfile ,".conf") ==0)*/)
-				if (USE_XMLPIPE2)
+				#ifdef USE_LIBEXPAT
 					myxmlpipe2 (newpathf);
-				else
+				#else
 					myxmlpipe (newpathf);
+				#endif
 
 		}
 
@@ -161,15 +163,15 @@ void myxmlpipe2 (char *filename)
 	strcat (text, "</lastaccess>\n");
 	fout (text); // lastmodified
 
-	strcpy (text, "<content>\n");
+	strcpy (text, "<content>\n ![CDATA[");
 	fout (text);
 	while ((c=getc(f)) != EOF )
 	{
 //		if ((c != '<') && (c != '>') && (c != '&') && (c != '\') && ( c != '/') || (c >='0' && c <='9') || (c>='A' && c<='z') 				|| (c>='А' && c<='я') || (c == ' ')) 
-		if (isalpha(c) || isalnum (c) || isspace(c) )
+		if (isalpha(c) || isalnum (c) || isspace(c) || (c== '\n'))
 			fprintf (myout, "%c", c);	
 	}
-	strcpy (text, "\n</content>\n");
+	strcpy (text, "\n]]</content>\n");
 	fout (text);
 	strcpy (text, "</sphinx:document>\n \n");
 	fout (text);
@@ -240,16 +242,17 @@ int main(int argc, char **argv)
 		//printf("Using directory %s\n", p);
 		//while ((c = getc (stdin)) != 's')
 			//sleep (100);
-		if (!USE_XMLPIPE2)
+		#ifndef USE_LIBEXPAT
 		{
 			mylistdir (p);
 		}
-		else
+		#else
 		{
 			createxmlpipe ();
 			mylistdir (p);
 			closexmlpipe ();
 		}
+		#endif
 	}
 	fclose (outf);
 	return 0;
