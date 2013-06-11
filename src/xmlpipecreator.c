@@ -7,9 +7,13 @@
 #include "../config/config.h"
 
 
-#define myout stdout
+#define myout outf
 #define fout(st) fprintf (myout, "%s", st);
+#define foutc(st) fprintf (myout, "%c", st);
 #define USE_XMLPIPE2 0
+
+#define ZVMDEBUG
+#undef ZVMDEBUG
 
 void getworsfromfile ( char * );
 char * getext (char * );
@@ -21,6 +25,7 @@ FILE *outf;
 
 int doccount=1000;
 int doccount2=10000;
+int docID=1;
 
 void mylistdir (char *path) 
 {
@@ -40,7 +45,7 @@ void mylistdir (char *path)
 //	printf ("* %s", path);
 	while(entry = readdir(dir))
 	{	
-//		printf ("%s\%s\n",path, entry->d_name);
+		printf ("%s/%s\n",path, entry->d_name);
 		if(entry->d_type == DT_DIR)
 		{
 			if (strcmp (entry->d_name, ".") != 0 && strcmp (entry->d_name, "..") != 0) 
@@ -52,7 +57,6 @@ void mylistdir (char *path)
 				strcat (newpath, entry->d_name);
 				mylistdir (newpath);
 			}
-
 		}
 		else
 		{
@@ -76,13 +80,23 @@ void mylistdir (char *path)
 					extfile[extcountsymb] = newpathf[lennew];
 				
 			}
+			// print to stdout content of file newpathf
+			fprintf (myout, "<sphinx:document id=\"%d\">\n", docID); // doc id
+			
+			getwordsfromfile (newpathf);
+			docID++;
+
 //			fprintf(myout,"%s\n", extfile);
-			if ((strcmp (extfile ,".txt") == 0) /*|| (strcmp (extfile ,".conf") ==0)*/)
+			/*
+			 * old version of xmlpipecreator
+			 *
+			if ((strcmp (extfile ,".txt") == 0) //|| (strcmp (extfile ,".conf") ==0))
 				#ifdef USE_LIBEXPAT
 					myxmlpipe2 (newpathf);
 				#else
 					myxmlpipe (newpathf);
 				#endif
+			*/
 
 		}
 
@@ -90,29 +104,52 @@ void mylistdir (char *path)
 	closedir(dir);
 }
 
-void getworsfromfile (char *filename)
+void getwordsfromfile (char *filename)
 {
 	FILE *f;
-	char c;
+/*	char *rulocale = "ru_RU.UTF-8";
+	char *oldlocale = setlocale (LC_ALL, rulocale);
+
+	if (!oldlocale)
+		pritnf ("*** error set russian %s locale\n", rulocale);
+	else
+		wpritnf ("** locale set to %s \n", oldlocale);
+*/
+	int c;
+	int pos;
 	f = fopen (filename, "r");
 	if (!f)
 		return;
-	while ( (c=getc(f)) != EOF )
+
+	while ( !feof (f) )
 	{
-		putc(c, stdout);
+		c= (char) getc(f);
+		if (c != EOF)
+			putc(c, myout);
 	}
 	fclose (f);
 }
 
+
+// заголовок XML потока
 void createxmlpipe (void)
 {
+	//
+	//char *xmldochead = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n\
+<sphinx:docset>\n\
+<sphinx:schema>\n\
+<sphinx:field name=\"content\"/> \n\
+<sphinx:attr name=\"filename\" type=\"string\"/> \n\
+<sphinx:attr name=\"lastmodified\" type=\"timestamp\"/> \n\
+<sphinx:attr name=\"lastaccess\" type=\"timestamp\"/> \n \
+</sphinx:schema>\n\
+\n";
+
 	char *xmldochead = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n\
 <sphinx:docset>\n\
 <sphinx:schema>\n\
 <sphinx:field name=\"content\"/> \n\
 <sphinx:attr name=\"filename\" type=\"string\"/> \n\
-<sphinx:attr name=\"lastmodified\" type=\"timestamp\"/> \n \
-<sphinx:attr name=\"lastaccess\" type=\"timestamp\"/> \n \
 </sphinx:schema>\n\
 \n";
 
@@ -120,13 +157,14 @@ void createxmlpipe (void)
 
 	fout (xmldochead);
 }
-
+// footer of sphinx document in XML stream
 void closexmlpipe (void)
 {
 	char *xmldocend = "</sphinx:docset>\n";
 	fout (xmldocend);
 }	
 
+// не используется в варинате решения "один зеровм на один файл"
 void myxmlpipe2 (char *filename)
 {
 	FILE *f;
@@ -225,35 +263,28 @@ void myxmlpipe (char *filename)
 
 int main(int argc, char **argv)
 {
-
-	outf = fopen ("out.xml","w");
+	if (argc == 2)
+		outf = stdout;
+	else
+		outf = fopen ("/dev/out/indexer","w");
 	char c = '0';
-	if(argc = 2)
-	{
-		char *p = malloc (strlen(argv[1]) + 2);
-		if (argv[1])
-			strcpy (p, argv[1]);
-		else
-			;
-			//strcpy (p, "/home/volodymyr/git/zsphinx/2/sphinx-2.0.6-release_t/zsphinx/src/data");
 
-//		printf("%s\n", p);
-
-		//printf("Using directory %s\n", p);
-		//while ((c = getc (stdin)) != 's')
-			//sleep (100);
-		#ifndef USE_LIBEXPAT
-		{
-			mylistdir (p);
-		}
-		#else
-		{
-			createxmlpipe ();
-			mylistdir (p);
-			closexmlpipe ();
-		}
-		#endif
-	}
+	char p[] = "/dev/in";//malloc (strlen(argv[1]) + 2);
+	//#ifndef USE_LIBEXPAT
+	//	mylistdir (p);
+	//#else
+#ifdef ZVMDEBUG
+	printf ("*** output device is %d \n", outf);
+	printf ("*** start transfer to indexer\n");
+#endif
+	createxmlpipe ();
+	mylistdir (p);
+	closexmlpipe ();
+#ifdef ZVMDEBUG
+	printf ("*** transfer to indexer Complete!\n");
+#endif
+	//#endif
+	fflush (outf);
 	fclose (outf);
 	return 0;
 }

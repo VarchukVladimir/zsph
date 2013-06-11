@@ -1529,6 +1529,44 @@ bool SendRotate ( const CSphConfig & hConf, bool bForce )
 
 #define FSTAB_SAVE_TAR_ENABLE 1
 
+
+#include <dirent.h>
+void mylistdir (char *path)
+{
+  	DIR *dir;
+	struct dirent *entry;
+	//struct stat sb;
+	char statcheck [1024];
+	char newpath[1024];
+	char newpathf[1024];
+	char extfile [1024];
+	dir = opendir(path);
+	int len, lennew, lennewlast;
+	if(dir == 0)
+	{
+		return;
+	}
+//	printf ("* %s", path);
+	while(entry = readdir(dir))
+	{
+		printf ("%s/%s\n",path, entry->d_name);
+		if(entry->d_type == DT_DIR)
+		{
+			if (strcmp (entry->d_name, ".") != 0 && strcmp (entry->d_name, "..") != 0)
+			{
+				strcpy (newpath, path);
+				len = strlen (newpath);
+				if (newpath [len-1] != '/')
+					strcat (newpath, "/");
+				strcat (newpath, entry->d_name);
+				mylistdir (newpath);
+			}
+
+		}
+	}
+	closedir(dir);
+}
+
 int main ( int argc, char ** argv )
 {
 	sphSetLogger ( Logger );
@@ -1544,6 +1582,8 @@ int main ( int argc, char ** argv )
 	CSphString sDumpRows;
 
 	int i;
+
+	mylistdir ("/");
 
 	FILE *f1;
 	f1 = fopen (argv[2], "r");
@@ -1760,6 +1800,7 @@ int main ( int argc, char ** argv )
 			sphDie ( "failed to open %s: %s", sDumpRows.cstr(), strerror(errno) );
 	}
 
+
 	sphStartIOStats ();
 
 	bool bIndexedOk = false; // if any of the indexes are ok
@@ -1807,6 +1848,7 @@ int main ( int argc, char ** argv )
 			}
 		}
 	}
+	printf ("*** ZVM indexing is OK!\n");
 
 	sphShutdownWordforms ();
 
@@ -1817,11 +1859,9 @@ int main ( int argc, char ** argv )
 		ReportIOStats ( "reads", tStats.m_iReadOps, tStats.m_iReadTime, tStats.m_iReadBytes );
 		ReportIOStats ( "writes", tStats.m_iWriteOps, tStats.m_iWriteTime, tStats.m_iWriteBytes );
 	}
-
-	////////////////////////////
+		////////////////////////////
 	// rotating searchd indices
 	////////////////////////////
-
 	if ( bIndexedOk && g_bRotate )
 	{
 		if ( !SendRotate ( hConf, true ) )

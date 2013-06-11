@@ -14,6 +14,8 @@ search_SOURCES = search.cpp
 spelldump_SOURCES = spelldump.cpp
 indextool_SOURCES = indextool.cpp
 tests_SOURCES = tests.cpp
+xmlpipecreator_SOURCES = xmlpipecreator.c
+text_SOURCES = text.c
 
 BUILT_SOURCES = extract-version
 .PHONY: extract-version

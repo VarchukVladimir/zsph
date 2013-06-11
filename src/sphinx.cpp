@@ -23677,10 +23677,10 @@ FILE * sphDetectXMLPipe ( const char * szCommand, BYTE * dBuf, int & iBufSize, i
 {
 	bUsePipe2 = true; // default is xmlpipe2
 #ifdef X86_64_ZEROVM
-	FILE * pPipe = stdin; //fopen ( szCommand, "r" );
-	printf ("*source is stdin \n");
+	FILE * pPipe = fopen("/dev/in/xmlpipecreator", "r");//stdin; //fopen ( szCommand, "r" );
+	printf ("*source is /dev/in/xmlpipecreator - %d \n", pPipe);
 #else
-	printf ("*source is xmlpipecomman form config \n");
+	printf ("*source is xmlpipecommand form config \n");
 	FILE * pPipe = popen ( szCommand, "r" );
 #endif
 	if ( !pPipe )
